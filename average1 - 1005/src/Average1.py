@@ -1,7 +1,10 @@
 __author__ = 'igor'
 
-A = input()
-B = input()
-SOMA = (3.5 * A) + (7.5 * B)
-MEDIA = SOMA / 11
-print "MEDIA = %.5f" % MEDIA
+aWeight = 3.5
+bWeight = 7.5
+
+a = input()
+b = input()
+weightedSum = (aWeight * a) + (bWeight * b)
+media = weightedSum / (aWeight + bWeight)
+print "MEDIA = %.5f" % media
