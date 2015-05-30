@@ -1,12 +1,8 @@
 __author__ = 'igor'
 
-# 1. Get input data for product 1 and 2
+product1 = raw_input().split(' ')
+product2 = raw_input().split(' ')
 
-# Maybe consider using an array of dictionaries...
+totalAmount = float(product1[1]) * float(product1[2]) + float(product2[1]) * float(product2[2])
 
-# 2. Process the total amount to be paid on product 1 and 2
-
-# Iterate over the array, calculating and updating the global var totalAmount
-
-# 3. Print the result (VALOR A PAGAR): pretty straightforward
-
+print "VALOR A PAGAR: R$ %.2f" %totalAmount
