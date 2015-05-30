@@ -1,2 +1,2 @@
 # URI
-URI Online Judges exercises
+URI Online Judge exercises
