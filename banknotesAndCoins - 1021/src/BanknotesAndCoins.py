@@ -1,3 +1,5 @@
+# coding=utf-8
+
 __author__ = 'igor'
 
 # Dictionary for notes
@@ -42,6 +44,8 @@ def calcSmallestNumberOfNotes(value, notes):
     return notes
 
 def calcSmallestNumberOfCoins(value, coins):
+    float(value)
+
     coins['dollar'] = int(value / 1.00)
     value -= coins['dollar'] * 1.00
 
@@ -59,8 +63,8 @@ def calcSmallestNumberOfCoins(value, coins):
 # REBOLAR para consertar isso e fazer int(value/0.05) dar 1
     coins['nickel'] = int(value / 0.05)
     print("value: %f" % value)
-    print("int 1.0000: %d" % int(0.050000 / 0.05))
-    print("valeu / 0.05: %d" % int(value / 0.05))
+    print("int 1.0000: %d" % (0.050000 / 0.05))
+    print("value / 0.05: %f" % (value / 0.05))
 
     print("coins['nickel'] = %f" % coins['nickel'])
     value -= coins['nickel'] * 0.05
